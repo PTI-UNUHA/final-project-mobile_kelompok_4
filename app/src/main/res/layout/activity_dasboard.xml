@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#030321"
+    android:padding="16dp">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/dashboard"
+            android:src="@drawable/ic_profile"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selamat_ngoding_fikri"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- PROGRESS TITLE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="11dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#B7C7D8"
+        android:textSize="14sp" />
+
+    <!-- PROGRESS BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/box_background"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <ProgressBar
+            android:id="@+id/progressBelajar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="12dp"
+            android:progress="60"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_custom"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_60"
+            android:textColor="#00C8FF"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- MENU CARD WRAPPER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        android:layout_marginTop="20dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!-- MENU MATERI -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_background"
+            android:orientation="vertical"
+            android:padding="14dp"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_materi"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/modul_1_dasar_tag_nmodul_2_struktur_dokumen"
+                android:textColor="#B7C7D8"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <!-- MENU KUIS -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_background"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_kuis"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/ujian_modul_1_n90_lulus"
+                android:textColor="#B7C7D8"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- CHART TITLE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/riwayat_skor_mingguan"
+        android:textColor="#C3C1C1"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+    <!-- CHART PLACEHOLDER -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/todo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_graph" />
+
+    <!-- BOTTOM NAVIGATION -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_navbar"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="100dp"
+            android:contentDescription="@string/todo_"
+            android:src="@drawable/ic_home" />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="90dp"
+            android:contentDescription="@string/TODO_"
+            android:src="@drawable/ic_courses" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ICON"
+            android:src="@drawable/ic_profile" />
+    </LinearLayout>
+
+
+</LinearLayout>

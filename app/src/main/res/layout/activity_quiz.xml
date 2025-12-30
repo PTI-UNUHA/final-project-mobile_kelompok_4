@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#030321"
+    android:padding="20dp">
+
+    <!-- TIMER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jam"
+            android:textColor="#FF5555"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:contentDescription="Timer soal" />
+    </LinearLayout>
+
+    <!-- NOMOR SOAL -->
+    <TextView
+        android:id="@+id/tvNomorSoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pertanyaan 3/10"
+        android:textColor="#D0D0D0"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+
+    <!-- BOX CODE -->
+    <LinearLayout
+        android:id="@+id/boxKode"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_code_box"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvKodeSoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="<img src=&quot;__________&quot; />\n&lt;img src=&quot;__________&quot; alt=&quot;Deskripsi gambar&quot; /&gt;"
+            android:textColor="#EDEDED"
+            android:textSize="15sp"
+            android:fontFamily="monospace" />
+    </LinearLayout>
+
+    <!-- SOAL -->
+    <TextView
+        android:id="@+id/tvSoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Atribut apa yang benar untuk mengisi sumber gambar? (isi di kolom yang tersedia)"
+        android:textColor="#D8D8D8"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp" />
+
+    <!-- TOMBOL HINT & KESEMPATAN -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        tools:ignore="ExtraText">
+
+        <Button
+            android:id="@+id/btnHint"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_hint"
+            android:text="💡 Hint (1)"
+            android:textColor="#FFFFFF"
+            android:paddingHorizontal="20dp" />
+
+        <Button
+            android:id="@+id/btnKesempatan"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_hint"
+            android:text="Kesempatan (1)"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="10dp"
+            android:paddingHorizontal="20dp" />
+    </LinearLayout>
+
+    <!-- SUBMIT -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30"
+        android:background="@drawable/bg_submit"
+        android:text="SUBMIT"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
+
+</LinearLayout>

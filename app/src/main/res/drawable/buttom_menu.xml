@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:padding="15dp"
+    android:orientation="horizontal"
+    android:background="#0B0E12">
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Materi Selanjutnya"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:background="@drawable/bg_button_blue" />
+
+    <Space
+        android:layout_width="10dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSelesai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tandai Selesai"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:background="@drawable/bg_button_outline" />
+
+</LinearLayout>

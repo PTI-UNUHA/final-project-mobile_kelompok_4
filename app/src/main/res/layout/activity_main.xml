@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#030321">
+
+    <!-- JUDUL -->
+    <TextView
+        android:id="@+id/txtJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoHTML"
+        android:layout_centerHorizontal="true"
+        android:text="@string/jagohtml"
+        android:textColor="#F4EEEE"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp" />
+
+    <!-- SUBTITLE -->
+    <TextView
+        android:id="@+id/txtSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtJudul"
+        android:layout_centerHorizontal="true"
+        android:text = "@string/kuasai_dasar_web_dengan_cepat"
+        android:textColor="#95989B"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp" />
+
+    <!-- LOGO HTML (ganti dengan asetmu sendiri) -->
+    <ImageView
+        android:id="@+id/logoHTML"
+        android:layout_width="305dp"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:adjustViewBounds="true"
+        android:importantForAccessibility="no"
+        android:src="@drawable/gambar_logo_html" />
+
+
+    <!-- TOMBOL MULAI NGODING -->
+    <Button
+        android:id="@+id/btnMulai"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:text="@string/mulai_ngoding"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#241B1B"
+        android:background="@drawable/button_glow" />
+
+</RelativeLayout>
