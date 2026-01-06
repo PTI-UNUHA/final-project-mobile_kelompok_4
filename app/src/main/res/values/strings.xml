@@ -61,4 +61,6 @@
     <string name="hint_1">Hint (1)</string>
     <string name="timer_00_25">00_25</string>
     <string name="jam">00:25</string>
+    <string name="ic_profile">ic_profile</string>
+    <string name="ic_courses">ic_courses</string>
 </resources>

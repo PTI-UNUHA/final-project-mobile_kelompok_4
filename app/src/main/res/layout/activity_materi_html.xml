@@ -170,13 +170,15 @@
             apptint:padding="10dp">
 
             <ImageView
+                android:contentDescription="@string/icon_home"
                 apptint:layout_width="0dp"
                 apptint:layout_height="wrap_content"
                 apptint:layout_weight="1"
                 apptint:src="@drawable/ic_home"
-                apptint:apptint="#5DECF9" />
+                apptint:app="#5DECF9" />
 
             <ImageView
+                android:contentDescription="@string/ic_courses"
                 apptint:layout_height="wrap_content"
                 apptint:layout_weight="1"
                 apptint:src="@drawable/ic_courses"
@@ -185,6 +187,7 @@
                 apptint:layout_width="10dp" />
 
             <ImageView
+                android:contentDescription="@string/ic_profile"
                 apptint:layout_width="0dp"
                 apptint:layout_height="wrap_content"
                 apptint:layout_weight="1"

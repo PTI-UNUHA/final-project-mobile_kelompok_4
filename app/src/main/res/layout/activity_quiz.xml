@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -64,6 +65,26 @@
         android:textSize="14sp"
         android:layout_marginTop="16dp" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        tools:ignore="ExtraText">
+
+        <Button
+            android:id="@+id/btnAlt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALT"
+            android:layout_marginEnd=8dp"/>
+        <Button
+            android:id="@+id/btnHref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HREF"/>
+    </LinearLayout>
+
     <!-- TOMBOL HINT & KESEMPATAN -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -99,13 +120,43 @@
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="30"
+        android:layout_
         android:background="@drawable/bg_submit"
         android:text="SUBMIT"
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#0B0E12"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home"
+            app:tint="#5DECF9" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_courses"
+            app:tint="#8A98A9" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_profile"
+            app:tint="#8A98A9" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
