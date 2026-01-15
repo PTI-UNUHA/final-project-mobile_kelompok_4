@@ -161,37 +161,37 @@
                 tools:ignore="ButtonStyle" />
         </LinearLayout>
 
-        <LinearLayout xmlns:apptint="http://schemas.android.com/apk/res/android"
-            apptint:orientation="horizontal"
-            apptint:layout_width="match_parent"
-            apptint:layout_height="65dp"
-            apptint:background="#0B0E12"
-            apptint:gravity="center"
-            apptint:padding="10dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#0B0E12"
+            android:gravity="center"
+            android:padding="10dp">
 
             <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:app="#5DECF9"
                 android:contentDescription="@string/icon_home"
-                apptint:layout_width="0dp"
-                apptint:layout_height="wrap_content"
-                apptint:layout_weight="1"
-                apptint:src="@drawable/ic_home"
-                apptint:app="#5DECF9" />
+                android:src="@drawable/ic_home" />
 
             <ImageView
                 android:contentDescription="@string/ic_courses"
-                apptint:layout_height="wrap_content"
-                apptint:layout_weight="1"
-                apptint:src="@drawable/ic_courses"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_courses"
                 app:tint="#8A98A9"
                 tools:ignore="MissingPrefix"
-                apptint:layout_width="10dp" />
+                android:layout_width="10dp" />
 
             <ImageView
                 android:contentDescription="@string/ic_profile"
-                apptint:layout_width="0dp"
-                apptint:layout_height="wrap_content"
-                apptint:layout_weight="1"
-                apptint:src="@drawable/ic_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_profile"
                 app:tint="#8A98A9"
                 tools:ignore="UseAppTint" />
 

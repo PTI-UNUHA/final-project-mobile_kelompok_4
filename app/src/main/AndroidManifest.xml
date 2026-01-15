@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JagoHTMLlNew">
         <activity
-            android:name=".MainActivity2"
+            android:name=".activity_mulai"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
