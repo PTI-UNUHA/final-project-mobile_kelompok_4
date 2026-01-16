@@ -14,7 +14,6 @@ class DashboardActivity : AppCompatActivity() {
 
         btnMateri.setOnClickListener {
             // Intent to start MateriActivity
-            val intent = intent(packageContext = this, cls = MateriActivity::class.java)
         }
 
         btnKuis.setOnClickListener {
@@ -23,15 +22,5 @@ class DashboardActivity : AppCompatActivity() {
         }
     }
 
-    private fun intent(
-        packageContext: DashboardActivity,
-        cls: Class<MateriActivity>
-    ) {
-    }
 }
 
-private fun DashboardActivity.intent(
-    packageContext: DashboardActivity,
-    cls: Class<MateriActivity>
-) {
-}

@@ -1,202 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#030321"
-    android:padding="20dp">
+    android:background="#030321">
 
     <LinearLayout
+        android:id="@+id/bottom_nav_materi"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:ignore="ExtraText">
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_navbar"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-        <!-- Header -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            tools:ignore="UseCompoundDrawables">
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="100dp"
+            android:contentDescription="@string/todo_"
+            android:src="@drawable/ic_home" />
 
-            <ImageView
-                android:contentDescription="@string/icon_back"
-                android:src="@drawable/ic_back"
-                android:layout_width="24dp"
-                android:layout_height="24dp" />
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="90dp"
+            android:contentDescription="@string/TODO_"
+            android:src="@drawable/ic_courses" />
 
-            <TextView
-                android:layout_marginStart="10dp"
-                android:text="@string/modul_1_pengenalan_html"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-
-        <!-- Title Section -->
-        <TextView
-            android:layout_height="wrap_content"
+        <ImageView
             android:layout_width="wrap_content"
-            android:layout_marginTop="25dp"
-            android:text="@string/materi"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <View
-            android:layout_width="40dp"
-            android:layout_height="3dp"
-            android:background="#11D9F5"
-            android:layout_marginTop="5dp" />
-
-        <!-- Apa itu HTML -->
-        <TextView
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/apa_itu_html"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="83dp"
-            android:layout_marginTop="5dp"
-            android:text="@string/html_adalah_singkatan_dari_hyper_text_markup_language_sebuah_bahasa_markup_setandar_yang_digunakan_untuk_menbuat_dan_menyusun_konten_halaman_web"
-            android:textColor="#D4D4D4"
-            android:textSize="17sp"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <!-- Struktur Dasar Dokumen 1 -->
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/STRUKTUR"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/box_background"
-            android:orientation="horizontal"
-            android:padding="15dp">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/p_ini_adalah_sebuah_paragraf_p"
-                android:textColor="#B0BAC9"
-                android:textSize="13sp"
-                android:typeface="monospace" />
-
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:contentDescription="@string/icon_folder"
-                android:src="@drawable/ic_folder" />
-        </LinearLayout>
-
-        <!-- Struktur Dasar Dokumen 2 -->
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/struktur_dasar_dokumen"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/box_background"
-            android:padding="15dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/html_body_body_html"
-                android:textColor="#B0BAC9"
-                android:textSize="13sp"
-                android:typeface="monospace" />
-        </LinearLayout>
-
-        <!-- Bottom Buttons -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="107dp"
-            android:layout_marginTop="30dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btnNext"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/btn_primary"
-                android:padding="12dp"
-                android:text="@string/materi_selanjutnya"
-                android:textColor="#000000"
-                tools:ignore="ButtonStyle,VisualLintButtonSize" />
-
-            <Button
-                android:id="@+id/btnFinish"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/btn_secondary"
-                android:padding="12dp"
-                android:text="@string/tandai_selesai"
-                android:textColor="#FFFFFF"
-                tools:ignore="ButtonStyle,VisualLintButtonSize" />
-        </LinearLayout>
-
-        <!-- BOTTOM NAVIGATION -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="130dp"
-            android:background="@drawable/bg_navbar"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_marginEnd="100dp"
-                android:contentDescription="@string/todo_"
-                android:src="@drawable/ic_home" />
-
-            <ImageView
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_marginEnd="90dp"
-                android:contentDescription="@string/TODO_"
-                android:src="@drawable/ic_courses" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/ICON"
-                android:src="@drawable/ic_profile" />
-        </LinearLayout>
-
-
+            android:contentDescription="@string/ICON"
+            android:src="@drawable/ic_profile" />
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_nav_materi"
+        android:background="#030321"
+        android:padding="20dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
 
+            <!-- Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/icon_back"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/modul_1_pengenalan_html"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Title Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/materi"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="#11D9F5" />
+
+            <!-- Apa itu HTML -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/apa_itu_html"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="83dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/html_adalah_singkatan_dari_hyper_text_markup_language_sebuah_bahasa_markup_setandar_yang_digunakan_untuk_menbuat_dan_menyusun_konten_halaman_web"
+                android:textColor="#D4D4D4"
+                android:textSize="17sp"
+                tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+            <!-- Struktur Dasar Dokumen 1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/STRUKTUR"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box_background"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/p_ini_adalah_sebuah_paragraf_p"
+                    android:textColor="#B0BAC9"
+                    android:textSize="13sp"
+                    android:typeface="monospace" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="@string/icon_folder"
+                    android:src="@drawable/ic_folder" />
+            </LinearLayout>
+
+            <!-- Struktur Dasar Dokumen 2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/struktur_dasar_dokumen"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box_background"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/html_body_body_html"
+                    android:textColor="#B0BAC9"
+                    android:textSize="13sp"
+                    android:typeface="monospace" />
+            </LinearLayout>
+
+            <!-- Bottom Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_primary"
+                    android:padding="12dp"
+                    android:text="@string/materi_selanjutnya"
+                    android:textColor="#000000"
+                    tools:ignore="ButtonStyle,VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/btnFinish"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_secondary"
+                    android:padding="12dp"
+                    android:text="@string/tandai_selesai"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="ButtonStyle,VisualLintButtonSize" />
+            </LinearLayout>
+        </LinearLayout>
     </ScrollView>
-
+</RelativeLayout>

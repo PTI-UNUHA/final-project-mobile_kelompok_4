@@ -1,5 +1,4 @@
 package com.example.jagohtmllnew
-
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -20,15 +19,9 @@ class QuizActivity : AppCompatActivity() {
         val btnSubmit = findViewById<Button>(R.id.btnSubmit)
 
         btnSubmit.setOnClickListener {
-            val intent = intent(packageContext = this, cls = leaderboardActivity::class.java)
 
             startActivity()
         }
     }
 }
 
-fun QuizActivity.intent(
-    packageContext: com.example.jagohtmllnew.QuizActivity,
-    cls: java.lang.Class<com.example.jagohtmllnew.leaderboardActivity>
-) {
-}

@@ -21,7 +21,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Leaderboard Mingguan"
+                android:text="@string/leaderboard_mingguan"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -40,7 +40,7 @@
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
-                    android:text="Mingguan"
+                    android:text="@string/mingguan"
                     android:textAllCaps="false"
                     android:background="@drawable/bg_tab_active"
                     android:textColor="#FFFEFE" />
@@ -54,7 +54,7 @@
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
-                    android:text="Semua Waktu"
+                    android:text="@string/semua_waktu"
                     android:textAllCaps="false"
                     android:background="@drawable/bg_button"
                     android:textColor="#0B0B0B" />
@@ -80,14 +80,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Skor Anda: 8,720 Poin"
+                    android:text="@string/skor_anda_8_720_poin"
                     android:textColor="#8A98A9"
                     android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Terus semangat! Tingkatkan poinmu!"
+                    android:text="@string/terus_semangat_tingkatkan_poinmu"
                     android:textColor="#5DECF9"
                     android:textSize="14sp"
                     android:paddingTop="5dp" />
@@ -97,7 +97,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Peringkat Teratas Minggu Ini"
+                android:text="@string/peringkat_teratas_minggu_ini"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:textSize="16sp"
@@ -121,21 +121,22 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/icon_mendali"
                         android:src="@drawable/ic_gold_medal" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Fikri M."
+                        android:text="@string/fikri_m"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp"
-                        android:paddingLeft="10dp" />
+                        android:paddingStart="10dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="12,500 Poin"
+                        android:text="@string/_12_500_poin"
                         android:textColor="#8A98A9"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -144,27 +145,29 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
                     android:orientation="horizontal"
                     android:padding="5dp">
 
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/icon_mendali_silver"
                         android:src="@drawable/ic_silver_medal" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Siti N."
+                        android:text="@string/siti_n"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp"
-                        android:paddingLeft="10dp" />
+                        android:paddingStart="10dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="11,890 Poin"
+                        android:text="@string/_11_890_poin"
                         android:textColor="#8A98A9"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -173,27 +176,29 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
                     android:orientation="horizontal"
                     android:padding="5dp">
 
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/icon_bronze"
                         android:src="@drawable/ic_bronze_medal" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Budi S."
+                        android:text="@string/budi_s"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp"
-                        android:paddingLeft="10dp" />
+                        android:paddingStart="10dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="10,240 Poin"
+                        android:text="@string/_10_240_poin"
                         android:textColor="#8A98A9"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -208,21 +213,22 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/icon_copper_medali"
                         android:src="@drawable/ic_copper_medal" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Joko H."
+                        android:text="@string/joko_h"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp"
-                        android:paddingLeft="10dp" />
+                        android:paddingStart="10dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="9,800 Poin"
+                        android:text="@string/_9_800_poin"
                         android:textColor="#8A98A9"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -232,7 +238,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Perkembangan Skor Saya"
+                android:text="@string/perkembangan_skor_saya"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:textSize="16sp"
@@ -243,7 +249,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:src="@drawable/ic_graph"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/icon_grap" />
         </LinearLayout>
     </ScrollView>
 
