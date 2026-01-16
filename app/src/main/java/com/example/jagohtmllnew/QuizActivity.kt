@@ -1,0 +1,34 @@
+package com.example.jagohtmllnew
+
+import android.os.Bundle
+import android.widget.Button
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+
+class QuizActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_quiz)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.btnSubmit)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+        val btnSubmit = findViewById<Button>(R.id.btnSubmit)
+
+        btnSubmit.setOnClickListener {
+            val intent = intent(packageContext = this, cls = leaderboardActivity::class.java)
+
+            startActivity()
+        }
+    }
+}
+
+fun QuizActivity.intent(
+    packageContext: com.example.jagohtmllnew.QuizActivity,
+    cls: java.lang.Class<com.example.jagohtmllnew.leaderboardActivity>
+) {
+}

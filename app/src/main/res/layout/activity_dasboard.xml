@@ -70,7 +70,7 @@
     <!-- MENU CARD WRAPPER -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="191dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
@@ -103,6 +103,14 @@
                 android:textColor="#B7C7D8"
                 android:textSize="13sp" />
 
+            <Button
+                android:id="@+id/btnMateri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Materi"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"/>
+
         </LinearLayout>
 
         <!-- MENU KUIS -->
@@ -131,33 +139,24 @@
                 android:textColor="#B7C7D8"
                 android:textSize="13sp" />
 
+            <Button
+                android:id="@+id/btnKuis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kuis"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"/>
+
         </LinearLayout>
     </LinearLayout>
 
-    <!-- CHART TITLE -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/riwayat_skor_mingguan"
-        android:textColor="#C3C1C1"
-        android:textSize="16sp"
-        android:layout_marginTop="30dp"
-        android:textStyle="bold"/>
 
-    <!-- CHART PLACEHOLDER -->
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="189dp"
-        android:layout_marginTop="12dp"
-        android:contentDescription="@string/todo"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ic_graph" />
 
     <!-- BOTTOM NAVIGATION -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="450dp"
         android:background="@drawable/bg_navbar"
         android:gravity="center"
         android:orientation="horizontal">

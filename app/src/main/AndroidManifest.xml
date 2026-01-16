@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JagoHTMLlNew">
         <activity
+            android:name=".MateriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".leaderboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DasboardActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity_mulai"
             android:exported="false" />
         <activity
