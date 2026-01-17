@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">jagoHTMLl new</string>
     <string name="kuasai_dasar_web_dengan_cepat">Kuasai Dasar Web dengan Cepat</string>
     <string name="jagohtml">JagoHTML</string>
@@ -53,7 +53,7 @@
     <string name="icon_back">TODO</string>
     <string name="_00_25">00:25</string>
     <string name="pertanyaan_3_10">Pertanyaan 3/10</string>
-    <string name="img_src_n_img_src_alt_deskripsi_gambar" tools:ignore="StringEscaping"><![CDATA[<img src=\\\'__________'>\n<img src='______' alt='Deskripsi gambar'>]]></string>
+    <string name="img_src_n_img_src_alt_deskripsi_gambar"><![CDATA[<img src='__________'>\n<img src='______' alt='Deskripsi gambar'>]]></string>
     <string name="atribut_apa_yang_benar_untuk_mengisi_sumber_gambar_isi_di_kolom_tersedia">Atribut apa yang benar untuk mengisi sumber gambar? (isi di kolom tersedia)</string>
     <string name="submit">Submit</string>
     <string name="kesempatan_1">Kesempatan (1)</string>
@@ -66,6 +66,5 @@
     <string name="label_kuis">Kuis</string>
     <string name="imag">TODO</string>
     <string name="siti_n_name">Siti N.</string>
-    <string name="src">src</string>
     <string name="leaderboard_mingguan">Leaderboard Mingguan</string>
 </resources>

@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pertanyaan 3/10"
-        android:textColor="#D0D0D0"
+        android:textColor="#EFEBEB"
         android:textSize="14sp"
         android:layout_marginTop="4dp" />
 
@@ -43,13 +43,14 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/bg_code_box"
         android:padding="16dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
 
         <TextView
             android:id="@+id/tvKodeSoal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="&lt;img src=&quot;__________&quot; /&gt;\n&lt;img src=&quot;__________&quot; alt=&quot;Deskripsi gambar&quot; /&gt;"
+            android:text="Atribut yang digunakan untuk menentukan alamat gambar pada tag &lt;img&gt; adalah?"
             android:textColor="#EDEDED"
             android:textSize="15sp"
             android:fontFamily="monospace" />
@@ -66,11 +67,11 @@
         android:layout_marginTop="16dp" />
 
     <Button
-        android:id="@+id/btnAlt"
+        android:id="@+id/btnsrc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:text="ALT" />
+        android:text="src" />
 
     <LinearLayout
         android:layout_width="wrap_content"
