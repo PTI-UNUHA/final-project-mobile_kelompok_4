@@ -46,7 +46,8 @@
         android:background="@drawable/box_background"
         android:layout_marginTop="10dp"
         android:gravity="center_vertical"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:id="@+id/main">
 
         <ProgressBar
             android:id="@+id/progressBelajar"
@@ -56,7 +57,7 @@
             android:layout_height="12dp"
             android:progress="60"
             android:max="100"
-            android.progressDrawable="@drawable/progress_custom"/>
+            android:progressDrawable="@drawable/progress_custom"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -173,6 +174,7 @@
             android:src="@drawable/ic_home" />
 
         <ImageView
+            android:id="@+id/nav_materi"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_marginEnd="90dp"
@@ -180,6 +182,7 @@
             android:src="@drawable/ic_courses" />
 
         <ImageView
+            android:id="@+id/btnNavLeaderboard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/ICON"

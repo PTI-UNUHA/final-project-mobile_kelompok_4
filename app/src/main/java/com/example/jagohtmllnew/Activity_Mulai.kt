@@ -26,7 +26,7 @@ class ActivityMulai: AppCompatActivity() {
             val btnMulai = findViewById<Button>(R.id.btnMulai)
 
             btnMulai.setOnClickListener {
-                val intent = Intent( this,  DasboardActivity::class.java)
+                val intent = Intent( this,  DashboardActivity::class.java)
 
                 startActivity(intent)
             }
